@@ -1,2 +1,2 @@
 # Salary_Survey_2021_vys
-VyS MIAD 2022
+Visualización y storytelling MIAD
