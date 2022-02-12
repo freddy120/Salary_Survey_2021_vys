@@ -29,7 +29,10 @@ Elaborado por: [Freddy Mendoza](about.md)
 | State                                    | texto          | si trabaja en USA, en qué estado trabaja                |
 | City                                     | texto          | ciudad donde trabaja                                    |
 | Overall years of professional experience | texto          | años de experiencia profesional total                   |
-| Years of experience in field             | texto          | años de experiencia en su campo
+| Years of experience in field             | texto          | años de experiencia en su campo                         |
+| Highest level of education completed     | texto          | nivel más alto de educación                             |
+| Gender                                   | texto          | genero del encuestado                                   |
+| Race                                     | texto          | raza del encuestado                                     |
 
 #### Variables luego del procesamiento:
 | Nombre                                   | Tipo de dato   | Descripción                                                                      |
