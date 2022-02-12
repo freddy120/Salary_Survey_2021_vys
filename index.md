@@ -8,7 +8,7 @@ Elaborado por: [Freddy Mendoza](about.md)
 ### Recursos:
 * Jupyter notebook del modelado de datos [notebook](https://github.com/freddy120/Salary_Survey_2021_vys/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb) [![Foo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/freddy120/Salary_Survey_2021_vys-/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb)
 * Datos de salarios [dataset](https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792)
-* Dashboard en google data studio [dashboard](https://)
+* Dashboard en google data studio [dashboard](https://datastudio.google.com/reporting/c5b2c862-0ce9-4b05-9fe3-7027ceb9c09b)
 
 
 #### Variables de la fuente de datos original:
