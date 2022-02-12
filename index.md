@@ -13,6 +13,8 @@ Elaborado por: [Freddy Mendoza](about.md)
 
 #### Variables de la fuente de datos original:
 
+Las variables mantienen su nombre original.
+
 | Nombre                                   | Tipo de dato   | Descripción                                             |
 | ---------------------------------------- | -------------- | ------------------------------------------------------- |
 | Timestamp                                | texto/datetime | fecha y hora de la respuesta a la encuesta              |
@@ -34,7 +36,9 @@ Elaborado por: [Freddy Mendoza](about.md)
 | Gender                                   | texto          | genero del encuestado                                   |
 | Race                                     | texto          | raza del encuestado                                     |
 
-#### Variables luego del procesamiento:
+#### Variables luego del modelado:
+
+Luego de aplicar la limpieza, minado y filtrado de los datos nos quedamos con las siguientes variables, se crean dos nuevas columnas con las versiones modificadas/estandarizadas de país y ciudad, y tres nuevas columnas que corresponde al salario anual, compensaciones e ingresos totales en pesos colombianos.
 
 | Nombre                                   | Tipo de dato   | Descripción                                                                      |
 | ---------------------------------------- | -------------- | -------------------------------------------------------------------------------- |
