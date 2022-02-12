@@ -2,8 +2,11 @@
 ## Ask A Manager Salary Survey 2021
 Este proyecto forma parte del curso de Visualización y storytelling de la Maestría en Inteligencia Analítica de Datos MIAD
 
-Recursos:
-* Jupyter notebook del modelado de datos [notebook](https://github.com/freddy120/Salary_Survey_2021_vys/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb)
+Elaborado por: [Freddy Mendoza](about.md)
+
+
+### Recursos:
+* Jupyter notebook del modelado de datos [notebook](https://github.com/freddy120/Salary_Survey_2021_vys/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb) [![Foo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/freddy120/Salary_Survey_2021_vys-/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb)
 * Datos de salarios [dataset](https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792)
 * Dashboard en google data studio [dashboard](https://)
 
@@ -27,7 +30,6 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
 ```python
 # limpieza manual
@@ -43,11 +45,8 @@ country_dict = {'UK': 'U.K.', 'Scotland ': 'U.K.', 'England': 'U.K.', 'England '
 df = df.replace({"Country": country_dict})
 ```
 
-[<img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/>](https://colab.research.google.com/github/freddy120/Salary_Survey_2021_vys-/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb)
 
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Autor
-[autor](about.md)
+
 
