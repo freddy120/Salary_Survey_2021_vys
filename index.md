@@ -144,6 +144,13 @@ df.to_excel('Salary_survey_2021_procesado.xlsx',  index=False)
 ```
 
 
+### Dashboard
+
+<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/c5b2c862-0ce9-4b05-9fe3-7027ceb9c09b/page/JjhlC" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+
 
 
 
