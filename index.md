@@ -1,8 +1,13 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/freddy120/Salary_Survey_2021_vys/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Ask A Manager Salary Survey 2021
+Este proyecto forma parte del curso de Visualización y storytelling de la Maestría en Inteligencia Analítica de Datos MIAD
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Recursos:
+* Jupyter notebook del modelado de datos [notebook](https://github.com/freddy120/Salary_Survey_2021_vys/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb)
+* Datos de salarios [dataset](https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792)
+* Repositorio publico [git repo](https://github.com/freddy120/Salary_Survey_2021_vys)
+* Dashboard en google data studio [dashboard](https://)
+
 
 ### Markdown
 
