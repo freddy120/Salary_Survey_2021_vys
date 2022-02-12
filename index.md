@@ -35,6 +35,7 @@ Elaborado por: [Freddy Mendoza](about.md)
 | Race                                     | texto          | raza del encuestado                                     |
 
 #### Variables luego del procesamiento:
+
 | Nombre                                   | Tipo de dato   | Descripción                                                                      |
 | ---------------------------------------- | -------------- | -------------------------------------------------------------------------------- |
 | Timestamp                                | texto/datetime | fecha y hora de la respuesta a la encuesta                                       |
@@ -132,10 +133,10 @@ df['salario_total'] = df.apply(lambda row:  row['salario_anual'] + row['compensa
 ```
 
 
-•	Por ultimo se crea un nuevo csv después de ejecutar todo el jupyter notebook, el cual utilizaremos para crear el dashboard.
+•	Por ultimo se crea un nuevo xlsx después de ejecutar todo el jupyter notebook, el cual utilizaremos para crear el dashboard.
 
 ```python
-df.to_csv('Salary_survey_2021_procesado.csv',  index=False)
+df.to_excel('Salary_survey_2021_procesado.xlsx',  index=False)
 ```
 
 
