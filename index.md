@@ -10,6 +10,54 @@ Elaborado por: [Freddy Mendoza](about.md)
 * Datos de salarios [dataset](https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792)
 * Dashboard en google data studio [dashboard](https://)
 
+### Modelado
+
+#### Variables de la fuente de datos:
+
+| Nombre                                   | Tipo de dato   | Descripción                                             |
+| ---------------------------------------- | -------------- | ------------------------------------------------------- |
+| Timestamp                                | texto/datetime | fecha y hora de la respuesta a la encuesta              |
+| How old are you?                         | texto          | rango de edad del encuestado                            |
+| Industry                                 | texto          | industria en la que trabaja                             |
+| Job title                                | texto          | título profesional que desempeña                        |
+| Additional context on job title          | texto          | información adicional del título profesional            |
+| Annual salary                            | número         | salario anual                                           |
+| Other monetary comp                      | número         | compensación monetaria adicional                        |
+| Currency                                 | texto          | moneda del salario                                      |
+| Currency - other                         | texto          | otro tipo de moneda no incluida en la variable Currency |
+| Additional context on income             | texto          | información adicional sobre sus ingresos                |
+| Country                                  | texto          | país donde trabaja                                      |
+| State                                    | texto          | si trabaja en USA, en qué estado trabaja                |
+| City                                     | texto          | ciudad donde trabaja                                    |
+| Overall years of professional experience | texto          | años de experiencia profesional total                   |
+| Years of experience in field             | texto          | años de experiencia en su campo
+
+#### Variables luego del procesamiento:
+| Nombre                                   | Tipo de dato   | Descripción                                                                      |
+| ---------------------------------------- | -------------- | -------------------------------------------------------------------------------- |
+| Timestamp                                | texto/datetime | fecha y hora de la respuesta a la encuesta                                       |
+| How old are you?                         | texto          | rango de edad del encuestado                                                     |
+| Industry                                 | texto          | industria en la que trabaja                                                      |
+| Job title                                | texto          | título profesional que desempeña                                                 |
+| Additional context on job title          | texto          | información adicional del título profesional                                     |
+| Annual salary                            | número         | salario anual                                                                    |
+| Other monetary comp                      | número         | compensación monetaria adicional                                                 |
+| Currency                                 | texto          | moneda del salario                                                               |
+| Currency - other                         | texto          | otro tipo de moneda no incluida en la variable Currency                          |
+| Additional context on income             | texto          | información adicional sobre sus ingresos                                         |
+| Country                                  | texto          | país donde trabaja                                                               |
+| State                                    | texto          | sí trabaja en USA, en qué estado trabaja                                         |
+| City                                     | texto          | ciudad donde trabaja                                                             |
+| Overall years of professional experience | texto          | años de experiencia profesional total                                            |
+| Years of experience in field             | texto          | años de experiencia en su campo                                                  |
+| Highest level of education completed     | texto          | nivel más alto de educación                                                      |
+| Gender                                   | texto          | genero del encuestado                                                            |
+| Race                                     | texto          | raza del encuestado                                                              |
+| Country\_clean                           | texto          | país donde trabaja, luego de la limpieza y estandarización                       |
+| City\_clean                              | texto          | ciudad donde trabaja, luego de la limpieza y estandarización                     |
+| salario\_anual                           | número         | salario anual en pesos colombianos al tipo de cambio 12/02/2022                  |
+| compensaciones                           | número         | compensaciones en pesos colombianos al tipo de cambio 12/02/2022                 |
+| salario\_total                           | número         | suma de salario anual mas las compensaciones, ingreso total en pesos colombianos |
 
 ### Markdown
 
