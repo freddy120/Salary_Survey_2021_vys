@@ -1,5 +1,5 @@
 
-## Ask A Manager Salary Survey 2021
+## Encuesta de Salario 2021
 Este proyecto forma parte del curso de Visualización y storytelling de la Maestría en Inteligencia Analítica de Datos MIAD
 
 Elaborado por: [Freddy Mendoza](about.md)
