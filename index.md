@@ -29,13 +29,25 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
+```python
+# limpieza manual
+country_dict = {'UK': 'U.K.', 'Scotland ': 'U.K.', 'England': 'U.K.', 'England ': 'U.K.', 'Scotland': 'U.K.', 'Uk': 'U.K.', 'England/UK': 'U.K.',
+                'U.S>': 'USA', 'ISA': 'USA', 'United State': 'USA', 'America': 'USA', 'United State of America': 'USA', 'United Statws': 'USA', 'U.S': 'USA',
+                'Unites States': 'USA', 'U. S. ': 'USA', 'United Sates': 'USA', 'Uniited States': 'USA', 'United Sates of America': 'USA',  'Unted States': 'USA',
+                'United Stattes': 'USA', 'United Statea': 'USA', 'United Statea': 'USA', 'Unites States': 'USA', 'United Statees': 'USA', 'Uniyed states': 'USA', 
+                'Uniyes States': 'USA', 'U.A.': 'USA', 'U. S.': 'USA', ' US of A': 'USA', 'United Kindom': 'U.K.', 'United Status': 'USA', 'Uniteed States': 'USA',
+                'United Stares': 'USA', 'United Stares': 'USA', 'Unites states ': 'USA', 'The US': 'USA', 'UnitedStates': 'USA', 'United statew': 'USA',
+                'United Statues': 'USA', 'United Statues': 'USA', 'Untied States': 'USA',  'Unitied States': 'USA', ' United Sttes': 'USA',
+                'united stated': 'USA', ' Uniter Statez': 'USA', 'U. S ': 'USA', 'United Stateds': 'USA', 'Unitef Stated': 'USA',
+                'United Stares ': 'USA', 'USaa': 'USA', 'america': 'USA', 'United Statss': 'USA', 'United  States': 'USA'}
+df = df.replace({"Country": country_dict})
+```
+
+[<img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/>](https://colab.research.google.com/github/freddy120/Salary_Survey_2021_vys-/blob/main/Ask_A_Manager_Salary_Survey_2021.ipynb)
+
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+### Autor
+[autor](about.md)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/freddy120/Salary_Survey_2021_vys/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
