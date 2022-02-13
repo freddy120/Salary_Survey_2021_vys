@@ -11,7 +11,7 @@ Elaborado por: [Freddy Mendoza](about.md)
 * Dashboard en google data studio [dashboard](https://datastudio.google.com/reporting/c5b2c862-0ce9-4b05-9fe3-7027ceb9c09b)
 
 
-#### Variables de la fuente de datos original:
+### Variables de la fuente de datos original:
 
 Las variables mantienen su nombre original.
 
@@ -36,7 +36,7 @@ Las variables mantienen su nombre original.
 | Gender                                   | texto          | genero del encuestado                                   |
 | Race                                     | texto          | raza del encuestado                                     |
 
-#### Variables luego del modelado:
+### Variables luego del modelado:
 
 Luego de aplicar la limpieza, minado y filtrado de los datos nos quedamos con las siguientes variables, se crean dos nuevas columnas con las versiones modificadas/estandarizadas de país y ciudad, y tres nuevas columnas que corresponde al salario anual, compensaciones e ingresos totales en pesos colombianos.
 
@@ -68,14 +68,14 @@ Luego de aplicar la limpieza, minado y filtrado de los datos nos quedamos con la
 
 ### Modelado
 
-•	Se descarga la basa de datos en formato csv del enlace.
-•	Se usa jupyter notebook para hacer el modelado, se puede usar colab para abrirlo.
-•	Se carga el archivo 'Ask A Manager Salary Survey 2021 (Responses) - Form Responses 1.csv’ en la ubicación del notebook para poder cargarlo con pandas.
+* Se descarga la basa de datos en formato csv del enlace.
+* Se usa jupyter notebook para hacer el modelado, se puede usar colab para abrirlo.
+* Se carga el archivo 'Ask A Manager Salary Survey 2021 (Responses) - Form Responses 1.csv’ en la ubicación del notebook para poder cargarlo con pandas.
 ```python
 df = pd.read_csv('Ask A Manager Salary Survey 2021 (Responses) - Form Responses 1.csv', thousands=',')
 df.head()
 ```
-•	Para la estandarización de la variable Country se usa el paquete dataprep que tiene una función clean_country en base a expresiones regulares para estandarizar el nombre de los países, como existen nombres que no son resueltos por esta función, entonces previamente se realiza una traducción manual usando un diccionario con solo los textos faltantes. El diccionario esta declarado en el jupyter notebook.
+* Para la estandarización de la variable Country se usa el paquete dataprep que tiene una función clean_country en base a expresiones regulares para estandarizar el nombre de los países, como existen nombres que no son resueltos por esta función, entonces previamente se realiza una traducción manual usando un diccionario con solo los textos faltantes. El diccionario esta declarado en el jupyter notebook.
 
 ```python
 
@@ -104,7 +104,7 @@ df = df.dropna(subset=['Country_clean'])
 
 Para actualizarlo debemos primero pasar la columna Country por la función clean_country y solo agregar al diccionario las expresiones que no son posibles de traducir. Esto nos ayuda a traducir manualmente pocos registros. Por último, quedan pocos registros que no pudieron ser estandarizados, pero como son menos del 1%, se opta por eliminarlos. Al terminar este procedimiento se crear una nueva variable Country_clean con los países estandarizados.
 
-•	La estandarización de las ciudades es mas complicada, porque existen muchas más formas de describir una ciudad y además existen muchas más ciudades que países, en este trabajo hacemos el intento usando el paquete fuzzywuzzy que nos da una métrica de similitud entre textos, de esta manera disminuimos la cantidad de países únicos en aproximadamente 1500. Al terminar este procedimiento se crea una nueva variable City_clean con las ciudades estandarizadas.
+* La estandarización de las ciudades es mas complicada, porque existen muchas más formas de describir una ciudad y además existen muchas más ciudades que países, en este trabajo hacemos el intento usando el paquete fuzzywuzzy que nos da una métrica de similitud entre textos, de esta manera disminuimos la cantidad de países únicos en aproximadamente 1500. Al terminar este procedimiento se crea una nueva variable City_clean con las ciudades estandarizadas.
 
 ```python
 from fuzzywuzzy import process, fuzz
@@ -122,7 +122,7 @@ for index, row in df.iterrows():
     
 ```
  
-•	Se realiza la conversión de salario anual y compensaciones usando un diccionario con los tipos de cambio a la fecha 12/02/2022 sacados de https://www.xe.com/currencyconverter/.
+* Se realiza la conversión de salario anual y compensaciones usando un diccionario con los tipos de cambio a la fecha 12/02/2022 sacados de https://www.xe.com/currencyconverter/.
 Se crean las columnas salario_anual, compensaciones y salario_total
  
 ```python
@@ -137,7 +137,7 @@ df['salario_total'] = df.apply(lambda row:  row['salario_anual'] + row['compensa
 ```
 
 
-•	Por ultimo se crea un nuevo xlsx después de ejecutar todo el jupyter notebook, el cual utilizaremos para crear el dashboard.
+* Por último, se crea un nuevo xlsx después de ejecutar todo el jupyter notebook, el cual utilizaremos para crear el dashboard.
 
 ```python
 df.to_excel('Salary_survey_2021_procesado.xlsx',  index=False)
