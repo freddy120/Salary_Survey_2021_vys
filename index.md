@@ -76,7 +76,6 @@ df = pd.read_csv('Ask A Manager Salary Survey 2021 (Responses) - Form Responses 
 df.head()
 ```
 * Para la estandarización de la variable Country se usa el paquete dataprep que tiene una función clean_country en base a expresiones regulares para estandarizar el nombre de los países, como existen nombres que no son resueltos por esta función, entonces previamente se realiza una traducción manual usando un diccionario con solo los textos faltantes. El diccionario esta declarado en el jupyter notebook.
-
 ```python
 
 # limpieza manual
@@ -105,7 +104,6 @@ df = df.dropna(subset=['Country_clean'])
 Para actualizarlo debemos primero pasar la columna Country por la función clean_country y solo agregar al diccionario las expresiones que no son posibles de traducir. Esto nos ayuda a traducir manualmente pocos registros. Por último, quedan pocos registros que no pudieron ser estandarizados, pero como son menos del 1%, se opta por eliminarlos. Al terminar este procedimiento se crear una nueva variable Country_clean con los países estandarizados.
 
 * La estandarización de las ciudades es mas complicada, porque existen muchas más formas de describir una ciudad y además existen muchas más ciudades que países, en este trabajo hacemos el intento usando el paquete fuzzywuzzy que nos da una métrica de similitud entre textos, de esta manera disminuimos la cantidad de países únicos en aproximadamente 1500. Al terminar este procedimiento se crea una nueva variable City_clean con las ciudades estandarizadas.
-
 ```python
 from fuzzywuzzy import process, fuzz
 
@@ -123,8 +121,7 @@ for index, row in df.iterrows():
 ```
  
 * Se realiza la conversión de salario anual y compensaciones usando un diccionario con los tipos de cambio a la fecha 12/02/2022 sacados de https://www.xe.com/currencyconverter/.
-Se crean las columnas salario_anual, compensaciones y salario_total
- 
+Se crean las columnas salario_anual, compensaciones y salario_total.
 ```python
 # tipo de cambio obtenido el 12/02/2022 por https://www.xe.com/currencyconverter/
 currency_dict = {'USD': 3929.82, 'GBP': 5330.46, 'CAD': 3088.08,'EUR': 4458.60, 'AUD/NZD': 2802.91, 'Other':3929.82, 'CHF': 4246.39, 
@@ -138,7 +135,6 @@ df['salario_total'] = df.apply(lambda row:  row['salario_anual'] + row['compensa
 
 
 * Por último, se crea un nuevo xlsx después de ejecutar todo el jupyter notebook, el cual utilizaremos para crear el dashboard.
-
 ```python
 df.to_excel('Salary_survey_2021_procesado.xlsx',  index=False)
 ```
